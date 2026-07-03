@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // Replace with your real production domain.
 // It powers the sitemap and the canonical / Open Graph URLs in BaseLayout.
-const SITE_URL = 'https://example.com';
+const SITE_URL = 'https://bracozs.github.io/astro-starter-portfolio';
 
 export default defineConfig({
   site: SITE_URL,

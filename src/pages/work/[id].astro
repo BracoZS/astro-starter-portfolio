@@ -2,7 +2,8 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Button from '@/components/Button.astro';
-import { formatDate } from '@/utils/formatDate';
+// TODO: changue to @/utils/formatDate when Astro 7 patches Rolldown
+import { formatDate } from '../../utils/formatDate';
 
 export async function getStaticPaths() {
   const entries = await getCollection('work', ({ data }) => !data.draft);
