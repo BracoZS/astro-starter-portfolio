@@ -5,7 +5,7 @@
 A minimal, professional portfolio template for **Astro**. Built for people who want
 something that looks intentional on day one, without a component library you didn't ask for.
 
-[**Live Demo**](https://bracozs.github.io/astro-starter-portfolio/) · [Report an issue](https://github.com/BracoZS/astro-starter-portfolio/issues)
+[**Live Demo**](https://astro-starter-portfolio.vercel.app) · [Report an issue](https://github.com/BracoZS/astro-starter-portfolio/issues)
 
 </div>
 
