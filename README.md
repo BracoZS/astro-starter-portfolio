@@ -60,6 +60,7 @@ Open `http://localhost:4321`.
 │   ├── og-image.png          # replace with your own 1200×630 image
 │   └── robots.txt
 ├── src/
+│   ├── assets/               # static images and assets
 │   ├── components/           # Header, Footer, Button, WorkRow, ThemeToggle...
 │   ├── content/
 │   │   └── work/*.md         # one file per project
@@ -72,6 +73,8 @@ Open `http://localhost:4321`.
 │   │   └── 404.astro
 │   ├── styles/
 │   │   └── global.css        # design tokens + Tailwind import
+│   ├── utils/
+│   │   └── formatDate.ts     # date formatting helpers
 │   ├── content.config.ts     # Zod schema for the "work" collection
 │   └── site.config.ts        # name, bio, email, social links
 ├── astro.config.mjs
