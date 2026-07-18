@@ -37,7 +37,7 @@ add those yourself if your project actually needs them.
 
 ```bash
 git clone https://github.com/BracoZS/astro-starter-portfolio.git
-cd portfolio-starter
+cd astro-starter-portfolio
 npm install
 npm run dev
 ```
