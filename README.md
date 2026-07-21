@@ -30,7 +30,7 @@ something that looks intentional on day one, without a component library you did
 - **Prettier**, pre-configured for `.astro` files and Tailwind class sorting
 - One accent color and two font variables control the entire visual identity
 
-Nothing here is decorative. There's no state management, no UI kit, and no CMS integration —
+No state management, no UI kit, no CMS integration —
 add those yourself if your project actually needs them.
 
 ## Quick start
@@ -38,30 +38,33 @@ add those yourself if your project actually needs them.
 ```bash
 git clone https://github.com/BracoZS/astro-starter-portfolio.git
 cd astro-starter-portfolio
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
+
+> Any package manager works.
 
 Open `http://localhost:4321`.
 
-| Command           | Action                                             |
-| ----------------- | -------------------------------------------------- |
-| `npm run dev`     | Start the local dev server                         |
-| `npm run build`   | Type-check, then build for production to `./dist/` |
-| `npm run preview` | Preview the production build locally               |
-| `npm run check`   | Run `astro check` only                             |
-| `npm run format`  | Format the project with Prettier                   |
+| Command        | Action                                             |
+| -------------- | -------------------------------------------------- |
+| `pnpm dev`     | Start the local dev server                         |
+| `pnpm build`   | Type-check, then build for production to `./dist/` |
+| `pnpm preview` | Preview the production build locally               |
+| `pnpm check`   | Run `astro check` only                             |
+| `pnpm format`  | Format the project with Prettier                   |
 
 ## Project structure
 
 ```text
 ├── public/
 │   ├── favicon.svg
+│   ├── favicons/
 │   ├── og-image.png          # replace with your own 1200×630 image
 │   └── robots.txt
 ├── src/
 │   ├── assets/               # static images and assets
-│   ├── components/           # Header, Footer, Button, WorkRow, ThemeToggle...
+│   ├── components/           # BaseHead, Button, Footer, Header, SectionHeading, ThemeToggle, WorkRow
 │   ├── content/
 │   │   └── work/*.md         # one file per project
 │   ├── layouts/
