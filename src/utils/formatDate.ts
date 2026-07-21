@@ -1,10 +1,11 @@
 // src/utils/formatDate.ts
-type DateStyle = "long" | "medium" | "short"
+type DateStyle = "long" | "medium" | "short" | "compact"
 
 const dateStyles: Record<DateStyle, Intl.DateTimeFormatOptions> = {
   long: { dateStyle: "long" },
   medium: { dateStyle: "medium" },
   short: { dateStyle: "short" },
+  compact: { year: "numeric", month: "2-digit" },
 }
 
 export function formatDate(

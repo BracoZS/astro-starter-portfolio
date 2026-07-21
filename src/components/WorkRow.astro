@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { formatDate } from '@/utils/formatDate';
 
 interface Props {
   entry: CollectionEntry<'work'>;
@@ -8,7 +9,7 @@ interface Props {
 const { entry } = Astro.props;
 const { title, summary, date, tags } = entry.data;
 
-const stamp = `${date.getFullYear()} · ${String(date.getMonth() + 1).padStart(2, '0')}`;
+const stamp = formatDate(date, "compact");
 ---
 
 <a
