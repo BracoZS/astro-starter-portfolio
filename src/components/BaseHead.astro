@@ -24,7 +24,6 @@ const socialImage = new URL(image || '/og-image.png', Astro.site);
 {/* Global Metadata */}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
 <meta name="author" content={SITE.name} />
 
@@ -52,18 +51,11 @@ const socialImage = new URL(image || '/og-image.png', Astro.site);
 <meta name="twitter:image" content={socialImage} />
 
 {/* Favicons */}
-<link
-  rel="icon"
-  type="image/png"
-  href="/favicons/favicon-96x96.png"
-  sizes="96x96"
-/>
-<link rel="shortcut icon" href="/favicons/favicon.ico" />
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="/favicons/apple-touch-icon.png"
-/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
 
 {/* Optional */}
 <meta name="robots" content="index, follow" />
