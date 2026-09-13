@@ -5,8 +5,8 @@ import { z } from 'astro/zod';
 // "work" entries live in src/content/work/*.md
 // Each file's `id` is derived from its filename, e.g. studio-os.md -> "studio-os",
 // which becomes the URL at /work/studio-os.
-const work = defineCollection({
-  loader: glob({ base: './src/content/work', pattern: '**/*.md' }),
+const blog = defineCollection({
+  loader: glob({ base: './src/content/blog', pattern: '**/*.md' }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -22,4 +22,4 @@ const work = defineCollection({
     }),
 });
 
-export const collections = { work };
+export const collections = { blog };

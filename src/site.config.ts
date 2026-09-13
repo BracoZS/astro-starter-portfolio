@@ -1,22 +1,22 @@
 // Edit this file to re-label the entire site. Header, Footer, the homepage
 // and SEO defaults all read from here instead of hardcoding copy.
 export const SITE = {
-  name: 'John Doe',
-  role: 'Product design & frontend engineering',
-  email: 'johndoe@example.com',
-  tagline: 'I design and build interfaces that hold up under real use.',
+  name: 'Daniel Mallia',
+  role: 'Doer of things',
+  email: 'danielmallia@djmau.org',
+  tagline: 'What are  you doing here?',
   description:
-    'Portfolio of John Doe — product design and frontend engineering, with an emphasis on speed, clarity, and the details most people skip.',
-  status: 'Currently building at Studio Co · open to new work, Q3 2026',
+    'Blog of Daniel Mallia — a tech generalist with an interest in geopolitics, philosophy, human interaction and music.',
+  status:
+    'Currently working in government, focussed on process improvement and digital capability development.',
   social: [
-    { label: 'GitHub', href: 'https://github.com/your-username' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/your-username' },
-    { label: 'X', href: 'https://x.com/your-username' },
+    { label: 'GitHub', href: 'https://github.com/djm-homelab' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/danielmallia' },
   ],
   locale: 'en',
 } as const;
 
 export const NAV_LINKS = [
-  { label: 'Work', href: '/work' },
+  { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
 ] as const;

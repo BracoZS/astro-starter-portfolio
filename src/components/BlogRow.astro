@@ -3,17 +3,17 @@ import type { CollectionEntry } from 'astro:content';
 import { formatDate } from '@/utils/formatDate';
 
 interface Props {
-  entry: CollectionEntry<'work'>;
+  entry: CollectionEntry<'blog'>;
 }
 
 const { entry } = Astro.props;
 const { title, summary, date, tags } = entry.data;
 
-const stamp = formatDate(date, "compact");
+const stamp = formatDate(date, 'compact');
 ---
 
 <a
-  href={`/work/${entry.id}`}
+  href={`/blog/${entry.id}`}
   class="group border-line hover:border-signal grid grid-cols-[3.5rem_1fr_auto] items-center gap-4 border-b py-5 transition-colors sm:grid-cols-[4.5rem_1fr_auto] sm:gap-6"
 >
   <span class="text-ink-soft font-mono text-xs">{stamp}</span>
