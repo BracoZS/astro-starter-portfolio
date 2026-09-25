@@ -33,7 +33,6 @@ something that looks intentional on day one, without a component library you did
 - **View Transitions** — smooth navigation between pages
 - **SEO defaults done right** — canonical URLs, Open Graph, Twitter cards, auto-generated sitemap
 - **Strict TypeScript** — `astro/tsconfigs/strict`, path aliases (`@/components/*`, etc.)
-- **Prettier**, pre-configured for `.astro` files and Tailwind class sorting
 - One accent color and two font variables control the entire visual identity
 
 No state management, no UI kit, no CMS integration —
@@ -58,7 +57,6 @@ Open `http://localhost:4321`.
 | `pnpm build`   | Type-check, then build for production to `./dist/` |
 | `pnpm preview` | Preview the production build locally               |
 | `pnpm check`   | Run `astro check` only                             |
-| `pnpm format`  | Format the project with Prettier                   |
 
 ## Project structure
 
