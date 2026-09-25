@@ -9,7 +9,7 @@ interface Props {
 const { entry } = Astro.props;
 const { title, summary, date, tags } = entry.data;
 
-const stamp = formatDate(date, "compact");
+const stamp = formatDate(date, 'compact');
 ---
 
 <a

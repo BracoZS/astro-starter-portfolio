@@ -7,6 +7,12 @@ something that looks intentional on day one, without a component library you did
 
 [**Live Demo**](https://astro-starter-portfolio.vercel.app) · [Report an issue](https://github.com/BracoZS/astro-starter-portfolio/issues)
 
+<br />
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBracoZS%2Fastro-starter-portfolio)
+&nbsp;
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/BracoZS/astro-starter-portfolio)
+
 </div>
 
 <br />
@@ -118,8 +124,9 @@ Full write-up in Markdown.
 
 ## Deploying
 
-This is a static site — it deploys anywhere that serves static files. See Astro's
-[deployment guides](https://docs.astro.build/en/guides/deploy/) for
+This is a static site — it deploys anywhere that serves static files.
+
+See Astro's [deployment guides](https://docs.astro.build/en/guides/deploy/) for
 Vercel, Netlify, Cloudflare Pages, and others. Remember to update the `site` value
 in `astro.config.mjs` to your real domain before building — it's used for the
 sitemap and canonical URLs.
