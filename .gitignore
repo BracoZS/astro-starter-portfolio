@@ -27,3 +27,4 @@ pnpm-debug.log*
 .vscode/*
 !.vscode/extensions.json
 .idea/
+.zed/settings.json
