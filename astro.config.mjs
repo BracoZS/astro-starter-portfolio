@@ -12,6 +12,7 @@ const SITE_URL = 'https://djmau.org';
 
 export default defineConfig({
   site: SITE_URL,
+  session: false,
   integrations: [sitemap()],
 
   // Prefetches internal links on hover/viewport entry for near-instant navigation.
@@ -20,8 +21,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     optimizeDeps: {
-      exclude: ['blake3-wasm']
-    }
+      exclude: ['blake3-wasm'],
+    },
   },
 
   // Astro's built-in Fonts API: self-hosts and optimizes these at build time
