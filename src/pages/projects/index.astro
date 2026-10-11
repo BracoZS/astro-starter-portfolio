@@ -1,10 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import BlogRow from '@/components/BlogRow.astro';
+import ProjectRow from '@/components/ProjectRow.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 
-const allBlog = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+const allProject = (await getCollection('projects', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 ---
@@ -14,9 +14,9 @@ const allBlog = (await getCollection('blog', ({ data }) => !data.draft)).sort(
   description="Things I'm working on or building for fun and / or profit."
 >
   <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
-    <SectionHeading eyebrow="All posts" count={allBlog.length} />
+    <SectionHeading eyebrow="All posts" count={allProject.length} />
     <div>
-      {allBlog.map((entry) => <BlogRow entry={entry} />)}
+      {allProject.map((entry) => <ProjectRow entry={entry} />)}
     </div>
   </section>
 </BaseLayout>
