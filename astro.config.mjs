@@ -13,7 +13,7 @@ const SITE_URL = 'https://djmau.org';
 export default defineConfig({
   site: SITE_URL,
   session: false,
-  integrations: [sitemap()],
+  integrations: [sitemap(),gallery()],
 
   // Prefetches internal links on hover/viewport entry for near-instant navigation.
   prefetch: true,
