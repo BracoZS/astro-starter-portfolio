@@ -12,8 +12,7 @@ draft: false
 
 When I was at uni, I played in a Brass Quintet. I can't remember if we were pretentious enough to give the quintet a name, but we thought we were pretty hot shit.
 Looking back, an honest appraisal would be that we were all individually pretty good amongst our cohort, but not exactly winning competitions and touring the world individually. Intermingled with individual practice, lectures, other ensembles, drinking beer (Naughton's Hotel Parkville, thanks for the memories) and generally just having a good time, we carved out a few hours to rehearse most weeks. (Rehearsals were, more often than not, followed up by a hot wash at Naughtons).
-When we were first forming, we had a rehearsal which, if memory serves, the head of the Brass Department attended purely by accident. I don't think we invited him, I think he just randomly turned up and started giving us his hot tips. This wasn't massively unusual in a university music school setting, but thing that sticks with me is that his feedback was almost exclusively about the dynamics (interpersonal, not musical) of working together as a small team. At the time, this was a real relevation for me. If I recall correctly, we never made it past the first page of the piece and we spent at least the first half an hour working on the first phrase, by memory, with our eyes closed.
-FOOTNOTE (For anyone who doesn't play an instrument, the idea of playing with your eyes closed probably makes little sense. Sure, you can't read the sheet music, but that's the least of the challenges. It may be surprising to know that visual cues form an enormous part of playing in an ensemble. You can see when someone is taking a breath and musicians frequently gesture with their body or instrument to give an indication of tempo, style, intonation and a whole raft of other things. It's amazing how much you can communicate using only your eyes and your instrument.)
+When we were first forming, we had a rehearsal which, if memory serves, the head of the Brass Department attended purely by accident. I don't think we invited him, I think he just randomly turned up and started giving us his hot tips. This wasn't massively unusual in a university music school setting, but thing that sticks with me is that his feedback was almost exclusively about the dynamics (interpersonal, not musical) of working together as a small team. At the time, this was a real relevation for me. If I recall correctly, we never made it past the first page of the piece and we spent at least the first half an hour working on the first phrase, by memory, with our eyes closed.<sup>[1](#footnote-1) </sup> 
 
 I realise this probably sounds like a really anodyne retelling of Whiplash (for the record, shit movie) but it was much more thoughtful and considered, and much less "Psycho arrogant bastard yelling at teenagers". The point is that the focus was on developing an almost subconscious understanding of each other and the inter-dependencies of our respective parts. It was **not** about being needlessly critical of someone else’s work or apportioning blame. In reality, it was an extended lesson that working well together is a deliberate skill, and possibly the most valuable skill that an ensemble could have. 
 
@@ -30,21 +29,21 @@ By doing this it meant that collective time was productive for everyone and the 
 
 This is not so different from any other professional setting, where, for example, turning up to a meeting unprepared is often a waste of everyone’s time. I rarely see the same willingness to abandon or reschedule a meeting that is clearly not productive due to a lack of preparation.
 Mapping this idea to a different context is trivial, if you adjust the concept of coming prepared from learning your own part to doing your own work to an excellent standard in private before bringing it to a collective forum. Examples might be:
-    • Arriving at meetings knowing what you will discuss, what your position is on the matters being discussed, and ready to advise and provide your relevant inputs at the right time.
-    • Make sure that when someone else is dependent on the outputs of your work to do their own, that you complete it on time and to the best of your ability, before the hand off point.
-    • Learn the tools or skills of your trade instinctively so that when you need to, you can either perform without preparation, or use well developed intuition to get you most of the way to a good outcome.
-    • Take the time to put your thoughts together before trying to articulate them to someone else, so as to avoid confusion, misunderstandings and rework.
+- Arriving at meetings knowing what you will discuss, what your position is on the matters being discussed, and ready to advise and provide your relevant inputs at the right time.
+- Make sure that when someone else is dependent on the outputs of your work to do their own, that you complete it on time and to the best of your ability, before the hand off point.
+- Learn the tools or skills of your trade instinctively so that when you need to, you can either perform without preparation, or use well developed intuition to get you most of the way to a good outcome.
+- Take the time to put your thoughts together before trying to articulate them to someone else, so as to avoid confusion, misunderstandings and rework.
     
 **Rule 2: Be honest with each other and yourself.**
 
 This was probably the hardest ‘rule’ to get used to. In music, the way that you play tends to be inextricably linked to your sense of self-worth. So much of your identity is tied up with what you do (you don't play music - you are a musician). It is an easy trick of self-delusion to spare yourself from the reality that something you are doing isn't working for the group. It’s equally easy to avoid honest feedback to spare the ego of your peers, knowing that an insult to their playing will probably be taken personally. To manage this inevitable tension, the approach we agreed to was always to:
 
-a. give feedback in the spirit of collective improvement
-b. receive feedback on the assumption that it is given with only positive intent
-c. deliver criticism with humility, knowing that your criticism may not be accurate and may have a very real impact on someone’s self-esteem
-d. if something isn't right, always consider that you may be the person who can change what they are doing to make it better (i.e. you might be the problem)
-e. deliver positive feedback freely, honestly and frequently
-f. start with the assumption that your work is not perfect and that any feedback you receive that helps improve it is a gift.
+- give feedback in the spirit of collective improvement
+- receive feedback on the assumption that it is given with only positive intent
+- deliver criticism with humility, knowing that your criticism may not be accurate and may have a very real impact on someone’s self-esteem
+- if something isn't right, always consider that you may be the person who can change what they are doing to make it better (i.e. you might be the problem)
+- deliver positive feedback freely, honestly and frequently
+- start with the assumption that your work is not perfect and that any feedback you receive that helps improve it is a gift.
 
 While I'm sure someone far smarter than me has written more eloquently to tie these ideas neatly together with some sort of philosophy or psychology, the premise is really quite simple: create a culture of mutual trust where individuals have the confidence to speak openly, the willingness to be wrong and the desire to continuously improve as a team.
 
@@ -52,7 +51,7 @@ In saying this, I acknowledge that the underlying principles of honestly, humili
 
 **Rule 3: Propose new things, be willing to try new things, and don't be afraid to admit if those things don't work**
 
-This is very similar to the idea of 'fail fast, learn fast' and is not so different to the conceptual approaches of rapid iteration. This rule was about setting up an environment where any member of the team could propose an idea and the ensemble would always be willing to try it out before making a decision.  What we observed was that the ideas (even the left of field ones) almost always offered some learning and utility, even if they were not ultimately a direction that we wanted to go. It may have been as simple a lessons as "that's too challenging to reliably play at that tempo", "breathing together there disrupts that phrase", or "the tuba player needs to be able to hear the trumpet to get in tune", but sometimes they were lessons like "with a bit more rehearsing, we could perform this piece by memory", or "three hours is too long to be a productive rehearsal for five people". Ultimately every experiment was a step toward a better ensemble. Even when the only thing you learn is that something doesn’t work, it is useful information. In any team, the ability to fearlessly propose ideas, even far-out ones, creates a freedom to experiment and learn that cannot be driven from the top down. To expect all the good ideas to come from the top is a mindless attitude better suited to lemmings<sup>[1](#footnote-1) </sup> than to adult humans.
+This is very similar to the idea of 'fail fast, learn fast' and is not so different to the conceptual approaches of rapid iteration. This rule was about setting up an environment where any member of the team could propose an idea and the ensemble would always be willing to try it out before making a decision.  What we observed was that the ideas (even the left of field ones) almost always offered some learning and utility, even if they were not ultimately a direction that we wanted to go. It may have been as simple a lessons as "that's too challenging to reliably play at that tempo", "breathing together there disrupts that phrase", or "the tuba player needs to be able to hear the trumpet to get in tune", but sometimes they were lessons like "with a bit more rehearsing, we could perform this piece by memory", or "three hours is too long to be a productive rehearsal for five people". Ultimately every experiment was a step toward a better ensemble. Even when the only thing you learn is that something doesn’t work, it is useful information. In any team, the ability to fearlessly propose ideas, even far-out ones, creates a freedom to experiment and learn that cannot be driven from the top down. To expect all the good ideas to come from the top is a mindless attitude better suited to lemmings<sup>[2](#footnote-2) </sup> than to adult humans.
 
 What is best is a cultural mindset that allows experimentation, which once adopted, creates a self-perpetuating cycle of learning and improvement.
 In line with Rule 1, our approach to this rule was always:
@@ -76,4 +75,7 @@ If the former, then get busy getting better together. Figure out what works and 
 
 #### Footnotes
 <a id="footnote-1"></a>
-**1.** Yes, I know that Lemmings are not stupid creatures that throw themselves off cliffs.
+**1.** For anyone who doesn't play an instrument, the idea of playing with your eyes closed probably makes little sense. Sure, you can't read the sheet music, but that's the least of the challenges. It may be surprising to know that visual cues form an enormous part of playing in an ensemble. You can see when someone is taking a breath and musicians frequently gesture with their body or instrument to give an indication of tempo, style, intonation and a whole raft of other things. It's amazing how much you can communicate using only your eyes and your instrument.
+<a id="footnote-2"></a>
+
+**2.** Yes, I know that Lemmings are not stupid creatures that throw themselves off cliffs.
