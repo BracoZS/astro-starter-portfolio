@@ -97,7 +97,7 @@
   --tw-prose-headings: var(--color-ink);
   --tw-prose-bold: var(--color-ink);
   --tw-prose-links: var(--color-signal);
-  --tw-prose-bullets: var(--color-signal);
+  --tw-prose-bullets: var(--color-ink);
   --tw-prose-hr: var(--color-line);
   --tw-prose-quotes: var(--color-ink);
   --tw-prose-quote-borders: var(--color-signal);

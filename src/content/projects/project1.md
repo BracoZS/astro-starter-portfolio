@@ -7,7 +7,7 @@ tags: ['HomeLab']
 url: https://example.com
 repo: https://github.com/your-username/fieldnote
 featured: false
-draft: false
+draft: True
 ---
 
 This is some text.
