@@ -19,7 +19,7 @@ something that looks intentional on day one, without a component library you did
 
 - **Astro 7** — static output, zero client-side JavaScript by default
 - **Tailwind CSS v4** — CSS-first config, no `tailwind.config.js` needed
-- **Content Collections** with a typed Zod schema — add a post by dropping a Markdown file in `src/content/blog/`
+- **Content Collections** with typed Zod schemas — add blog posts and projects by dropping Markdown files into their respective folders
 - **Light & dark mode** — class-based, no flash of unstyled theme on load
 - **Astro Fonts API** — self-hosted Google Fonts, zero layout shift, no third-party requests
 - **View Transitions** — smooth navigation between pages
@@ -62,21 +62,23 @@ Open `http://localhost:4321`.
 │   └── robots.txt
 ├── src/
 │   ├── assets/               # static images and assets
-│   ├── components/           # BaseHead, BlogRow, Button, Footer, Header, SectionHeading, ThemeToggle
+│   ├── components/           # BaseHead, BlogRow, ProjectRow, Button, Footer, Header, SectionHeading, ThemeToggle
 │   ├── content/
-│   │   └── blog/*.md         # one file per post
+│   │   ├── blog/*.md         # one file per post
+│   │   └── projects/*.md     # one file per project
 │   ├── layouts/
 │   │   └── BaseLayout.astro  # <head>, SEO, fonts, theme script
 │   ├── pages/
 │   │   ├── index.astro
 │   │   ├── about.astro
 │   │   ├── blog/[id].astro
+│   │   ├── projects/[id].astro
 │   │   └── 404.astro
 │   ├── styles/
 │   │   └── global.css        # design tokens + Tailwind import
 │   ├── utils/
 │   │   └── formatDate.ts     # date formatting helpers
-│   ├── content.config.ts     # Zod schema for the "blog" collection
+│   ├── content.config.ts     # Zod schemas for the "blog" and "projects" collections
 │   └── site.config.ts        # name, bio, email, social links
 ├── astro.config.mjs
 └── tsconfig.json
@@ -111,6 +113,9 @@ featured: true # optional, shows it first on the homepage
 
 Full write-up in Markdown.
 ```
+
+**Projects.** Add a Markdown file to `src/content/projects/` using the same frontmatter
+fields as a blog post. Project pages are available at `/projects/<filename>`.
 
 **Open Graph image.** Replace `public/og-image.png` with your own 1200×630 image.
 

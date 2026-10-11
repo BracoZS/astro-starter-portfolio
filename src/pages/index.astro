@@ -3,14 +3,22 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Button from '@/components/Button.astro';
 import BlogRow from '@/components/BlogRow.astro';
+import ProjectRow from '@/components/ProjectRow.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 import { SITE } from '@/site.config';
 
 const allBlog = await getCollection('blog', ({ data }) => !data.draft);
-const sorted = [...allBlog].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const featured = sorted.filter((entry) => entry.data.featured);
-const rest = sorted.filter((entry) => !entry.data.featured);
-const selected = [...featured, ...rest].slice(0, 5);
+const allProjects = await getCollection('projects', ({ data }) => !data.draft);
+const sortedBlog = [...allBlog].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const sortedProjects = [...allProjects].sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const featuredBlog = sortedBlog.filter((entry) => entry.data.featured);
+const otherBlog = sortedBlog.filter((entry) => !entry.data.featured);
+const featuredProjects = sortedProjects.filter((entry) => entry.data.featured);
+const otherProjects = sortedProjects.filter((entry) => !entry.data.featured);
+const selectedProjects = [...featuredProjects, ...otherProjects].slice(0, 5);
+const selectedBlog = [...featuredBlog, ...otherBlog].slice(0, 5);
 ---
 
 <BaseLayout title={SITE.name}>
@@ -29,24 +37,43 @@ const selected = [...featured, ...rest].slice(0, 5);
     </p>
 
     <div class="mt-8 flex flex-wrap items-center gap-3">
-      <Button href="/blog" variant="solid">Read the blog→</Button>
+      <Button href="/blog" variant="solid">Read the blog →</Button>
       <Button href="#contact" variant="ghost">Say hello</Button>
     </div>
+  </section>
+
+  <section id="projects" class="mx-auto max-w-3xl px-6 pb-20">
+    <SectionHeading eyebrow="Selected projects" count={allProjects.length} />
+    <div>
+      {selectedProjects.map((entry) => <ProjectRow entry={entry} />)}
+    </div>
+    {
+      allProjects.length > selectedProjects.length && (
+        <div class="mt-6">
+          <a
+            href="/projects"
+            class="text-ink-soft hover:text-signal font-mono text-xs transition-colors"
+          >
+            View all {allProjects.length} projects →
+          </a>
+        </div>
+      )
+    }
   </section>
 
   <section id="blog" class="mx-auto max-w-3xl px-6 pb-20">
     <SectionHeading eyebrow="Recent Brainwaves" count={allBlog.length} />
     <div>
-      {selected.map((entry) => <BlogRow entry={entry} />)}
+      {selectedBlog.map((entry) => <BlogRow entry={entry} />)}
     </div>
     {
-      allBlog.length > selected.length && (
+      allBlog.length > selectedBlog.length && (
         <div class="mt-6">
           <a
             href="/blog"
             class="text-ink-soft hover:text-signal font-mono text-xs transition-colors"
           >
-            View all {allBlog.length} projects →
+            View all {allBlog.length} posts →
           </a>
         </div>
       )
@@ -59,14 +86,14 @@ const selected = [...featured, ...rest].slice(0, 5);
       {SITE.description}
     </p>
     <a href="/about" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
-      More about how I work →
+      More about me →
     </a>
   </section>
 
   <section id="contact" class="mx-auto max-w-3xl px-6 pb-24">
     <SectionHeading eyebrow="Let's talk" />
     <p class="font-display text-ink max-w-lg text-2xl sm:text-3xl">
-      Have something worth building?
+      Have something worth talking about?
     </p>
     <a
       href={`mailto:${SITE.email}`}

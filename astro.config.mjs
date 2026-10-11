@@ -2,14 +2,16 @@
 import { defineConfig, fontProviders } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
+import gallery from 'astro-gallery';
+
+import cloudflare from '@astrojs/cloudflare';
 
 // Replace with your production URL after deploying to Vercel / Netlify.
 // It powers the sitemap and the canonical / Open Graph URLs in BaseLayout.
-const SITE_URL = 'https://astro-starter-portfolio.vercel.app';
+const SITE_URL = 'https://djmau.org';
 
 export default defineConfig({
   site: SITE_URL,
-
   integrations: [sitemap()],
 
   // Prefetches internal links on hover/viewport entry for near-instant navigation.
@@ -47,4 +49,6 @@ export default defineConfig({
       subsets: ['latin'],
     },
   ],
+
+  adapter: cloudflare(),
 });

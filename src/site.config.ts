@@ -4,19 +4,21 @@ export const SITE = {
   name: 'Daniel Mallia',
   role: 'Doer of things',
   email: 'danielmallia@djmau.org',
-  tagline: 'What are  you doing here?',
+  tagline: 'What are you doing here?',
   description:
-    'Blog of Daniel Mallia — a tech generalist with an interest in geopolitics, philosophy, human interaction and music.',
+    'Blog of Daniel Mallia — a technology generalist with an interest in geopolitics, philosophy, human interaction and music.',
   status:
-    'Currently working in government, focussed on process improvement and digital capability development.',
+    'Currently working in government, focussed on process improvement, digital capability development and learning new skills',
   social: [
     { label: 'GitHub', href: 'https://github.com/djm-homelab' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/danielmallia' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/daniel-mallia' },
   ],
   locale: 'en',
 } as const;
 
 export const NAV_LINKS = [
   { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'About', href: '/about'
+  },
 ] as const;
