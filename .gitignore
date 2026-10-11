@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# Cloudflare Wrangler local state
+.wrangler/
+
 # generated types
 .astro/
 
