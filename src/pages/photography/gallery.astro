@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+//import BlogRow from '@/components/BlogRow.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import JustifiedGallery from 'astro-gallery/components/JustifiedGallery.astro';
+
+//const allBlog = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+//  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+//);
+---
+
+<BaseLayout title="Gallery" description="Photos.">
+  <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
+    <SectionHeading eyebrow="Images"/>
+    <div>
+        <JustifiedGallery folderPath="gallery" album="Some of my photos" />
+    </div>
+  </section>
+</BaseLayout>
