@@ -1,0 +1,72 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Button from '@/components/Button.astro';
+import { formatDate } from '@/utils/formatDate';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('projects', ({ data }) => !data.draft);
+  return entries.map((entry) => ({
+    params: { id: entry.id },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<'projects'>;
+}
+
+const { entry } = Astro.props;
+const { title, summary, role, date, tags, url, repo } = entry.data;
+const { Content } = await render(entry);
+
+const formattedDate = formatDate(date);
+---
+
+<BaseLayout title={title} description={summary}>
+  <article class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
+    <a href="/projects" class="text-ink-soft hover:text-signal font-mono text-xs transition-colors">
+      ← All projects
+    </a>
+
+    <h1 class="font-display text-ink mt-6 max-w-2xl text-3xl font-medium sm:text-4xl">
+      {title}
+    </h1>
+
+    <dl
+      class="border-line text-ink-soft mt-6 flex flex-wrap gap-x-8 gap-y-2 border-y py-4 font-mono text-xs"
+    >
+      <div><dt class="inline">Role —</dt><dd class="inline">{role}</dd></div>
+      <div><dt class="inline">Date —</dt><dd class="inline">{formattedDate}</dd></div>
+      {
+        tags.length > 0 && (
+          <div>
+            <dt class="inline">Built with — </dt>
+            <dd class="inline">{tags.join(', ')}</dd>
+          </div>
+        )
+      }
+    </dl>
+
+    <div class="prose prose-sm sm:prose-base mt-10 max-w-2xl">
+      <Content />
+    </div>
+
+    <div class="mt-10 flex flex-wrap gap-3">
+      {
+        url && (
+          <Button href={url} variant="solid">
+            View project →
+          </Button>
+        )
+      }
+      {
+        repo && (
+          <Button href={repo} variant="ghost">
+            View source code
+          </Button>
+        )
+      }
+    </div>
+  </article>
+</BaseLayout>
